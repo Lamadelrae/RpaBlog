@@ -1,11 +1,9 @@
-*
-
-
-{
+* {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,16 +12,18 @@ body {
     color: #7e7979;
 }
 
+.content-wrapper{
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .content {
-    text-justify:center;
-    padding-left: 180px;
-    padding-right: 180px;
-    padding-top: -13%;
+    text-justify:center;    
 }
 
 h1 {
     text-justify:center;
-    padding-left: 180px;
     font-size:200%;
     color: #08113a;
 }
@@ -33,23 +33,30 @@ u, b {
 }
 
 #logoHeader {
-    width: 3.4%;
-    padding-top: 1.2%;
+    width:40px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 40px;
+    text-align: center;
+    top: 20%;
+    bottom: 0;
+    text-align: center;
 }
+
 #logoBottom {
-    width: 30%;
-    padding-top:450px;
-    padding-right: 210px;
-    float: right;
+    padding-top: 70px;
+    padding-bottom:70px;
+    width: 140px;
+    height:auto;
 }
 
 #imgRobot {
     width: 100%;
 }
 
-#unifoa_icon
-{
-    padding-top: 3.5%;
+#unifoa_icon {
     float: right;
     width: 10%;
 }
@@ -94,12 +101,12 @@ u, b {
     font-family: 'Roboto Medium';
 }
 
-li {
+.top li {
     display:inline-block;
     transition-duration: 0.5s
 }
 
-li a {
+.top li a {
     display:block;
     height: 50px;
     line-height: 50px;
@@ -107,33 +114,50 @@ li a {
     text-align: center;
     text-decoration: none;
     min-width:120px;
+    margin-right:40px;
 }
 
-li a:hover{
+.top li a:hover{
     color: #b1595a;
 }
 
+/* menu novo */
+.top li ul {
+    display: none;
+}
+
+.top li ul li {
+    display: block;
+    float: none;
+}
+
+.top ul li a:hover + .hidden, .top .hidden:hover {
+    display: block;
+    position: absolute;
+    top: 45px;
+    background-color: #ffffff;
+}
+
+body > header > div > ul > li:nth-child(1) > ul > li:nth-child(1) > a, body > header > div > ul > li:nth-child(1) > ul > li:nth-child(2) > a
+{
+    margin-right: 0;
+}
+
+/* menu novo */
+
 .bottom{
     width: 100%;
-    padding-bottom: 30px 0;
-    margin-bottom: 10%;
     margin-top: 4%;
 }
 
 .icon {
-    width:400px;
-    padding-left:200px;
-    display: inline-block;
+    width:170px;
+    height: auto;
 }
 
-.contato
-{
-    padding-top: 190px;
-    padding-left: 35px;
-    display: inline-block;
-    text-align: left;
+.contato{
+    text-align: center;
 }
-
 
 h4 {
     font-size:120%;
@@ -144,6 +168,7 @@ h4 {
     width: 73%;
     margin: auto;
     padding-bottom: -40%;
+    padding-top: 15px;
 }
 
 .copyright{
@@ -151,7 +176,25 @@ h4 {
     width: 100%;
     text-align: left;
     border-top: solid 1px #ccc;
-    padding: 30px 50px;
+    padding: 15px 50px 10px 50px;
     color: white;
     font-family: 'Roboto Thin';
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  text-align: center;
+}
+
+.logo-wrapper{
+    width: 100%;
+    text-align: center;   
 }
