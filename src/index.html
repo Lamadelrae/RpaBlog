@@ -6,48 +6,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hiperautomação (RPA: Robotic Process Automation)</title>
+    <link rel="icon" href="img/sistemas_logo.png">
     <link href="./estilo/style.css" rel="stylesheet" type="text/css" />
 </head>
+
+<!-- **LEMBRETES**
+    -> Logotipo (FEITO)
+    -> Menus (FEITO)
+    -> Imagens (FEITO)
+    -> Listas (TERMINAR O MENU DO MAPA)
+    -> Tabelas (FEITO)
+    -> Links (INSERIR OS LINKS NA BIBLIOGRAFIA)
+    -> Nome do aluno, matrícula, foto do aluno, e-mail turma na página de copyright (FEITO)
+                            <div id="contatoKellvyn">
+                            <h4>Kellvyn de Miranda Sampaio</h4><br>
+                            <p>Matrícula: 202110216<br>
+                            E-mail: KELLVYN.SAMPAIO@unifoa.edu.br</p>
+                        </div>    
+-->
 
 <body>
 
     <header>
         <div class="top">
-            <ul id="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Copyright</a></li>
+            <ul class="menu">
+                <li><a href="#">MAPA</a></li>
+                <!-- não deu pra fazer esse dropdown menu no mapa.
+                    <ul class="dropdown">
+                        <li><a href="#">BLOG</a></li> -> Leva no início do primeiro parágrafo do blog.
+                        <li><a href="#">SUBTÍTULO</a></li> -> Leva a algum subtítulo importante do blog, tipo "Hiperautomação" ou "O que é RPA?".
+                    </ul> -->
+                <li><a href="#">HOME</a></li>
+                <img id="logoHeader" src="img/sistemas_logo.png">
+                <li><a href="#anchor">CONTATO</a></li>
+                <li><a href="#anchor">COPYRIGHT</a></li>
+            </ul>
             </ul>
         </div>
     </header>
 
     <section>
-
+        <img id="imgRobot" src="img/robot.png">
+        <div id="blogBox">BLOG</div>
+        <div id="title">Hiperautomação e RPA<br>(Robotic Process Automation)</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut velit vitae odio bibendum placerat eu non nibh. Fusce ultrices enim id risus pellentesque tempus. Vestibulum at lectus eu mauris aliquam accumsan. <b>Aenean urna magna</b>, facilisis vel pretium porta, scelerisque eu neque. Ut maximus ante at ex pretium euismod. Maecenas sit amet odio ut lacus rutrum laoreet. Curabitur hendrerit mi sed ex maximus hendrerit.<u> Proin aliquam, lacus at maximus elementum, dolor risus placerat tortor</u>, efficitur <b>ultricies nunc magna ultricies nibh</b>. Morbi vel faucibus nibh, id fringilla elit. Nunc luctus nec leo vitae fermentum. Nullam eu lacus at tortor auctor dapibus in vel dui. Curabitur non interdum augue. Phasellus nibh leo, interdum a imperdiet eu, bibendum et dolor. <b>Fusce consectetur pretium felis</b> eu pellentesque. Etiam lorem sem, venenatis id dictum consequat, auctor a justo.
+        </p>
+        <br>
+        <p class="content">Integer arcu risus, volutpat ut sem quis, facilisis sagittis mauris. Nunc vel semper leo, tempus aliquet nisl. Cras iaculis rutrum lacinia. Quisque blandit nunc id nisl maximus, sed porta arcu tempor. Etiam pharetra, dui et tempus pellentesque, <b>massa enim tincidunt leo</b>, eget imperdiet nibh purus ac velit. Sed rutrum justo vitae semper condimentum. Nulla sagittis lectus ut fermentum placerat. Cras id maximus lorem.
+        </p>
+        <br>
+        <br>
+        <h1>Lorem ipsum?</h1>
+        <br>
+        <br>
+        <p class="content"><u>Dolor sit amet, consectetur adipiscing elit</u>. Suspendisse ut velit vitae odio bibendum placerat eu non nibh. Fusce ultrices enim id risus pellentesque tempus. Vestibulum at lectus eu mauris aliquam accumsan. Aenean urna magna, facilisis vel pretium porta, scelerisque eu neque. Ut maximus ante at ex pretium euismod. Maecenas sit amet odio ut lacus rutrum laoreet. Curabitur hendrerit mi sed ex maximus hendrerit. Proin aliquam, <b>lacus at maximus elementum</b>, dolor risus placerat tortor, efficitur ultricies nunc magna ultricies nibh. Morbi vel faucibus nibh, id fringilla elit. Nunc luctus nec leo vitae fermentum. Nullam eu lacus at tortor auctor dapibus in vel dui. Curabitur non interdum augue. Phasellus nibh leo, interdum a imperdiet eu, bibendum et dolor. Fusce consectetur pretium felis eu pellentesque. Etiam lorem sem, venenatis id dictum consequat, auctor a justo.
+        </p>
+        <br>
+        <br>
+        <h1>Fusce consectetur pretium</h1>
+        <br>
+        <br>
+        <p class="content"> Felis eu pellentesque. <b>Etiam lorem sem, venenatis id dictum consequat, auctor a justo</b>. Integer arcu risus, volutpat ut sem quis, facilisis sagittis mauris. Nunc vel semper leo, tempus aliquet nisl. Cras iaculis rutrum lacinia. Quisque blandit nunc id nisl maximus, sed porta arcu tempor. Etiam pharetra, dui et tempus pellentesque, <u>massa enim tincidunt leo, eget imperdiet nibh purus ac velit</u>. Sed rutrum justo vitae semper condimentum. Nulla sagittis lectus ut fermentum placerat. Cras id maximus lorem.
+        </p>
+        <br>
+        <br>
+        <h1>Morbi vel faucibus nibh</h1>
+        <br>
+        <br>
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut velit vitae odio bibendum placerat eu non nibh. Fusce ultrices enim id risus pellentesque tempus. Vestibulum at lectus eu mauris aliquam accumsan. <b>Aenean urna magna</b>, facilisis vel pretium porta, scelerisque eu neque. Ut maximus ante at ex pretium euismod. Maecenas sit amet odio ut lacus rutrum laoreet. Curabitur hendrerit mi sed ex maximus hendrerit.<u> Proin aliquam, lacus at maximus elementum, dolor risus placerat tortor</u>, efficitur <b>ultricies nunc magna ultricies nibh</b>. Morbi vel faucibus nibh, id fringilla elit. Nunc luctus nec leo vitae fermentum. Nullam eu lacus at tortor auctor dapibus in vel dui. Curabitur non interdum augue. Phasellus nibh leo, interdum a imperdiet eu, bibendum et dolor. <b>Fusce consectetur pretium felis</b> eu pellentesque. Etiam lorem sem, venenatis id dictum consequat, auctor a justo.
+        </p>
+        <br>
+        <p class="content">Integer arcu risus, volutpat ut sem quis, facilisis sagittis mauris. Nunc vel semper leo, tempus aliquet nisl. Cras iaculis rutrum lacinia. Quisque blandit nunc id nisl maximus, sed porta arcu tempor. Etiam pharetra, dui et tempus pellentesque, <b>massa enim tincidunt leo</b>, eget imperdiet nibh purus ac velit. Sed rutrum justo vitae semper condimentum. Nulla sagittis lectus ut fermentum placerat. Cras id maximus lorem.
+        </p>
+        <br>
+        <br>
+        <h1>Lorem ipsum?</h1>
+        <br>
+        <br>
+        <p class="content"><u>Dolor sit amet, consectetur adipiscing elit</u>. Suspendisse ut velit vitae odio bibendum placerat eu non nibh. Fusce ultrices enim id risus pellentesque tempus. Vestibulum at lectus eu mauris aliquam accumsan. Aenean urna magna, facilisis vel pretium porta, scelerisque eu neque. Ut maximus ante at ex pretium euismod. Maecenas sit amet odio ut lacus rutrum laoreet. Curabitur hendrerit mi sed ex maximus hendrerit. Proin aliquam, <b>lacus at maximus elementum</b>, dolor risus placerat tortor, efficitur ultricies nunc magna ultricies nibh. Morbi vel faucibus nibh, id fringilla elit. Nunc luctus nec leo vitae fermentum. Nullam eu lacus at tortor auctor dapibus in vel dui. Curabitur non interdum augue. Phasellus nibh leo, interdum a imperdiet eu, bibendum et dolor. Fusce consectetur pretium felis eu pellentesque. Etiam lorem sem, venenatis id dictum consequat, auctor a justo.
+        </p>
+        <br>
+        <br>
+        <h1>Fusce consectetur pretium</h1>
+        <br>
+        <br>
+        <p class="content"> Felis eu pellentesque. <b>Etiam lorem sem, venenatis id dictum consequat, auctor a justo</b>. Integer arcu risus, volutpat ut sem quis, facilisis sagittis mauris. Nunc vel semper leo, tempus aliquet nisl. Cras iaculis rutrum lacinia. Quisque blandit nunc id nisl maximus, sed porta arcu tempor. Etiam pharetra, dui et tempus pellentesque, <u>massa enim tincidunt leo, eget imperdiet nibh purus ac velit</u>. Sed rutrum justo vitae semper condimentum. Nulla sagittis lectus ut fermentum placerat. Cras id maximus lorem.
+        </p>
     </section>
 
     <footer>
         <div class="bottom">
-            <div class="sobre">
-                <h4>Sobre nós</h4>
-                <p>Lorem ipsum dolor sit amet,dictum sapien. Quisque eros tellus, dictum et venenatis et, iaculis ut libero.</p>
-            </div>
-            <div class="alunos">
-                <h4>Quem somos</h4>
-                <p>
-                    Gabriel<br/>
-                    Matthew<br/>
-                    Sarah<br/>
-                    Kellvyn
-                </p>
-            </div>
-            <div class="mapa">
-                <h4>Mapa</h4>
-                <a>Home</a><br/>
-                <a>Copyright</a>
-            </div>
+            <div class="bottomBorder"></div>
+            <img id="logoBottom" src="img/sistemas_logoBottom.png">           
+                    <br>
+                    <img class="icon" src="img/sarah_icon.png">
+                    <div class="contato">
+
+                        <h4>Sarah Carla Souza</h4><br>
+                        <p>Matrícula: 202110201<br>
+                        E-mail: SARAH.CARLA@unifoa.edu.br</p>
+                    </div>   
+                    <br>
+                    <img class="icon" src="img/kellvyn_icon.png">
+                    <div class="contato">
+                        <h4>Kellvyn de Miranda Sampaio</h4><br>
+                        <p>Matrícula: 202110216<br>
+                        E-mail: KELLVYN.SAMPAIO@unifoa.edu.br</p>
+                    </div>   
+                    <br>
+                    <img class="icon" src="img/gabriel_icon.png">
+                    <div class="contato">
+                        <h4>Gabriel Lamon Lopes</h4><br>
+                        <p>Matrícula: 202110885<br>
+                        E-mail: GABRIEL.LAMON@unifoa.edu.br</p>
+                    </div>     
+                    <br>
+                    <img class="icon" src="img/matthew_icon.png">
+                    <div class="contato">
+                        <h4>Matthew da Silva Almeida</h4><br>
+                        <p>Matrícula: 202110735<br>
+                        E-mail: MATTHEW.ALMEIDA@unifoa.edu.br</p>
+                    </div>   
         </div>
-        <div class="copyright">
-            Copyright © 2021 UniFOA - Sistemas de Informação - 1 período 2021/1. Todos os direitos reservados. Todas as marcas e suas imagens são de propriedade de seus respectivos donos.<br/>
-            É vedada a reprodução, total ou parcial, de qualquer conteúdo sem expressa autorização.
+
+        <div div id="anchor">
+            <div class="copyright">
+                <img id="unifoa_icon" src="img/unifoa_icon.png">
+                Copyright © 2021 UniFOA - Sistemas de Informação - 1 período 2021/1. Todos os direitos reservados. Todas as marcas e suas imagens são de propriedade de seus respectivos donos.<br/>
+                É vedada a reprodução, total ou parcial, de qualquer conteúdo sem expressa autorização.<br><br>
+                Bibliografia: Link1 encurtado; Link2 encurtado; Link3 encurtado.
+            </div>
         </div>
     </footer>
 
